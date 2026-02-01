@@ -1,0 +1,43 @@
+# ======================
+# Python / virtual env
+# ======================
+.isp_venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.env
+venv/
+
+# ======================
+# OS / Editor
+# ======================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# ======================
+# HuggingFace / cache
+# ======================
+.cache/
+.cache_huggingface/
+**/.cache/
+**/.hf_cache/
+*.safetensors
+
+# ======================
+# FAISS / embeddings (generated)
+# ======================
+
+# Flat RAG embeddings (generated)
+embeddings_rag/**
+
+# Hierarchical RAG embeddings (generated)
+embeddings_hrag/**
+
+# ======================
+# Logs / temp
+# ======================
+*.log
+*.tmp
