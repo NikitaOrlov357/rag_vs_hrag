@@ -23,12 +23,12 @@ LLM_MODEL = "microsoft/Phi-3-mini-4k-instruct"
 LLM_DTYPE = torch.float16
 LLM_DEVICE_MAP = "auto"
 
-RAG_TOP_K = 5
+RAG_TOP_K = 3
 HRAG_TOP_PARENTS = 4
-HRAG_TOP_K = 5
-MAX_CONTEXT_CHARS = 2000
+HRAG_TOP_K = 3
+MAX_CONTEXT_CHARS = 6000
 
-MAX_NEW_TOKENS = 350
+MAX_NEW_TOKENS = 700
 TEMPERATURE = 0.2
 DO_SAMPLE = True
 
@@ -375,11 +375,11 @@ def print_final_summary(
     print(rag_topk_str)
     print()
 
-    print(hrule("HRAG: PARENTS (WHERE TO LOOK)", "-"))
+    print(hrule("HRAG: PARENTS ", "-"))
     print(hrag_parents_str)
     print()
 
-    print(hrule("HRAG: TOP-K (WHAT TO READ)", "-"))
+    print(hrule("HRAG: TOP-K ", "-"))
     print(hrag_topk_str)
     print()
 
